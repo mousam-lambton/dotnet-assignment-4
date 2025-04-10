@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Quiz Results";
+}
+
+<div class="text-center">
+    <h2>Your Score: @ViewBag.Score / 10</h2>
+    <p>@ViewBag.Message</p>
+
+    <div class="mt-4">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary mr-3">🏠 Go Home</a>
+        <a asp-controller="Scores" asp-action="Index" class="btn btn-secondary">📊 View All Scores</a>
+    </div>
+</div>

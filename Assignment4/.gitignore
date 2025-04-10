@@ -1,0 +1,68 @@
+# Build Folders
+bin/
+obj/
+out/
+
+# User-Specific Files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+.scaffolding/
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Entity Framework
+*.jfm
+
+# DotNetCore
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# File-based secrets
+secrets.json
+
+# IIS
+*.vspscc
+*.vssscc
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# MacOS files
+.DS_Store
+
+# Linux files
+*~
+
+# JetBrains Rider
+.idea/
+*.sln.iml

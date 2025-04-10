@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Quiz App</h1>
+    <p>Developed by Arbin Shrestha, Mousam Dhakal and Parmod Shrestha</p>
+    <br />
+    <h3>Take a quiz on C#.net.</h3>
+    <p>Test your knowledge of C#.net with our engaging quiz! Whether you're a beginner or an expert, this quiz will challenge your understanding of key C# concepts.
+    </p>
+    <p>Answer 10 random questions and see how well you know C# syntax, data structures, and best practices. <b>Ready to start? Let's find out!</b></p>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Start", "Quiz")" class="btn btn-primary mr-3">⏰ Start Quiz</a>
+        <a href="@Url.Action("Index", "Scores")" class="btn btn-secondary">📊 View Past Scores</a>
+    </div>
+</div>

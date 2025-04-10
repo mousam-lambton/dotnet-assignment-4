@@ -1,0 +1,35 @@
+@model List<Assignment4.Models.QuizResult>
+    @{
+    ViewData["Title"] = "Past Quiz Scores";
+}
+
+<h1>Past Quiz Scores</h1>
+
+    <div class="mt-4">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary mb-3">🏠 Go Home</a>
+    </div>
+
+    @if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+        <tr>
+        <th>Date & Time</th>
+        <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var result in Model)
+    {
+        <tr>
+            <td>@result.CompletedAt.ToString("MMM dd, yyyy - h:mm tt")</td>
+            <td>@result.Score / 10</td>
+            </tr>
+    }
+    </tbody>
+        </table>
+}
+else
+{
+    <p>No quiz scores available yet. Take a quiz to see your results here!</p>
+}
